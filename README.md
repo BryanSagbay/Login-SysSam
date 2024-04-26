@@ -20,7 +20,7 @@ Este es un proyecto de ejemplo que implementa un sistema de login utilizando Spr
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/sistema-login-spring-boot.git
+git clone https://github.com/BryanSagbay/Login-SysSam.git
 ```
 
 2. Abre el proyecto en tu IDE preferido.
