@@ -1,5 +1,5 @@
 # Login-SysSam
-Login create with Java Spring Boot for project bussines
+Login create with Java Spring Boot for project 
 
 Claro, aquí tienes un ejemplo de un README para un proyecto de inicio rápido de un sistema de login con Java utilizando Spring Boot:
 
