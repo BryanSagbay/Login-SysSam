@@ -1,13 +1,13 @@
 # Login-SysSam
 Login create with Java Spring Boot for project 
 
-Claro, aquí tienes un ejemplo de un README para un proyecto de inicio rápido de un sistema de login con Java utilizando Spring Boot:
-
 ---
 
 # Sistema de Login con Spring Boot
 
 Este es un proyecto de ejemplo que implementa un sistema de login utilizando Spring Boot. El proyecto utiliza Spring Security para gestionar la autenticación y la autorización de los usuarios.
+
+[![](https://img.shields.io/badge/OpenJDK-purple?logo=Java)](https://img.shields.io/badge/OpenJDK-purple?logo=java) [![](https://img.shields.io/badge/Spring-green?logo=Spring)](https://img.shields.io/badge/Spring-purple?logo=spring) [![Langua](https://img.shields.io/github/languages/count/BryanSagbay/Login-SysSam?color=c90e21 "Langua")](https://img.shields.io/github/languages/count/BryanSagbay/login-SysSam?color=c90e21 "Langua") [![Git](https://img.shields.io/github/repo-size/bryansagbay/Login-SysSam?color=56BEB8 "Gut")](https://img.shields.io/github/repo-size/bryansagbay/Login-SysSam?color=56BEB8 "Gut") [![Start](https://img.shields.io/github/stars/bryansagbay/Login-SysSam?color=blue "Start")](https://img.shields.io/github/stars/bryansagbay/Login-SysSam?color=blue "Start") 
 
 ## Requisitos
 
@@ -20,7 +20,7 @@ Este es un proyecto de ejemplo que implementa un sistema de login utilizando Spr
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/sistema-login-spring-boot.git
+git clone https://github.com/BryanSagbay/Login-SysSam.git
 ```
 
 2. Abre el proyecto en tu IDE preferido.
