@@ -4,6 +4,8 @@ import com.sam.LoginSysSam.Auth.AuthResponse;
 import com.sam.LoginSysSam.Auth.LoginRequest;
 import com.sam.LoginSysSam.Auth.RegisterRequest;
 import com.sam.LoginSysSam.Model.Role;
+
+
 import com.sam.LoginSysSam.Model.User;
 import com.sam.LoginSysSam.Repository.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -24,8 +26,8 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     public AuthResponse login(LoginRequest request) {
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
-        UserDetails user=userRepository.findByUsername(request.getUsername()).orElseThrow();
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(request.getUser_name(), request.getPassword()));
+        UserDetails user=userRepository.findByUsername(request.getUser_name()).orElseThrow();
         String token=jwtService.getToken(user);
         return AuthResponse.builder()
                 .token(token)
@@ -35,11 +37,11 @@ public class AuthService {
 
     public AuthResponse register(RegisterRequest request) {
         User user = User.builder()
-                .username(request.getUsername())
+                .email(request.getEmail())
+                .username(request.getUser_name())
                 .password(passwordEncoder.encode( request.getPassword()))
-                .firstname(request.getFirstname())
-                .lastname(request.getLastname())
-                .country(request.getCountry())
+                .first_name(request.getFirst_name())
+                .last_name(request.getLast_name())
                 .role(Role.USER)
                 .build();
 
